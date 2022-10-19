@@ -1,0 +1,95 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    background-size: cover;
+    color: #f5f6f7;
+    font-family: tahoma;
+    font-size: 16px;
+  }
+  
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  }
+  
+  form {
+    width: 80vw;
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    padding: 1rem 0;
+    border: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 1rem;
+  }
+  
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 90%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  
+  label[for="name"] {
+    font-size: 18px;
+  }
+  
+  label[for="email"] {
+    font-size: 18px;
+  }
+  
+  label[for="number"] {
+    font-size: 18px;
+  }
+  
+  input[id="name"] {
+    font-size: 18px;
+  }
+  
+  input[id="email"] {
+    font-size: 18px;
+  }
+  
+  input[id="number"] {
+    font-size: 18px;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  .padding-bottom {
+    padding-bottom: 1rem;
+  }
+  
+  .qualifiers {
+    border: 3px solid #3b3b4f;
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Project: NMC Survey Form</h1>
+    <p id="description">Thank you for taking the time to improve the mod!</p>
+    <form id="survey-form">
+      <fieldset>
+      <label for="name-label" id="name-label">Name: <input id="name" name="name-label" type="text" placeholder="Enter your name" required></label>
+      <label for="email-label" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+      <label for="number-label" id="number-label">Age (optional): <input id="number" name="age" type="number" min="13" max="120" placeholder="Age"></label>
+      </fieldset>
+      <fieldset class="qualifiers">
+        <ol>
+        <li><label>What difficulty mode are you playing?</label>
+        <label><input type="radio" id="beginner" name="difficulty" value="0" class="inline"> Beginner</label>
+        <label><input type="radio" id="standard" name="difficulty" value="1" class="inline"> Standard</label>
+        <label><input type="radio" id="proud" name="difficulty" value="2" class="inline"> Proud</label>
+        <label><input type="radio" id="critical" name="difficulty" value="3" class="inline"> Critical</label>
+        <label class="padding-bottom"><input type="radio" id="lv1-critical" name="difficulty" value="4"  class="inline"> LV1 Critical</label></li>
+
+        <li><label>What type of player are you?</label>
+        <label><input type="radio" id="beginner" name="player-type" value="0" class="inline"> Beginner (Little to no experience)</label>
+        <label><input type="radio" id="experienced" name="player-type" value="1" class="inline"> Experienced (I've done a few playthroughs)</label>
+        <label class="padding-bottom"><input type="radio" id="veteran" name="player-type" value="2" class="inline"> Veteran (Tons of playthroughs)</label></li>
+          
+        <li><label>What type of PC are you playing the mod on?</label>
+        <label><input type="radio" id="low-end" name="pc-type" value="0" class="inline"> Low-End</label>
+        <label><input type="radio" id="decent" name="pc-type" value="1" class="inline"> Decent</label>
+        <label class="padding-bottom"><input type="radio" id="high-end" name="pc-type" value="2" class="inline"> High-End</label></li>
+          
+          <li><label class="padding-bottom" for="crashes">Did you encounter any crashes?
+          <select id="dropdown" name="crashes" required>
+            <option>(select one)</option>
+            <option>Yes</option>
+            <option>No</option>
+            </select>
+          </label>
+          <label class="padding-bottom" for="crashes-comment">
+          If so, please describe the crashes in detail.
+          <textarea id="crashes-comment" name="crashes-comment" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+          </label></li>
+          <li><label class="padding-bottom" for="lag">Did you encounter any lag or slowdown?
+          <select id="lag" name="lag" required>
+            <option>(select one)</option>
+            <option>Yes</option>
+            <option>No</option>
+            </select>
+          </label>
+          <label class="padding-bottom" for="lag-comment">
+          If so, please describe the lag/slowdown in detail.
+          <textarea id="lag-comment" name="lag-comment" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+          </label></li>
+          <li><label class="padding-bottom" for="like">What do you like about the current state of the mod?
+          <textarea id="like" name="like" required rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+          </label></li>
+          <li><label class="padding-bottom" for="dislike">What don't you like about the current state of the mod?
+            <textarea id="dislike" name="dislike" required rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+          </label></li>
+          <li><label class="padding-bottom" for="improvements">What specific improvements do you think should be made?
+          <textarea id="improvements" name="improvements" required rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+          </label></li>
+          </ol>
+          </fieldset>
+          <label for="disclose" name="disclose">
+          <input id="disclose" value="0" type="checkbox" required name="disclose" class="inline" /> I agree not to disclose the identity of the project lead to anyone.</label>
+          <label for="share" name="share">
+          <input id="share" value="1" type="checkbox" required name="share" class="inline" /> I agree not to extract the patch and share it's contents without the project lead's consent.</label>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </body>
+</html>
